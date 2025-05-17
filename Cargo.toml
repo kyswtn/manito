@@ -1,0 +1,18 @@
+[package]
+name = "manito"
+version = "0.1.0"
+edition = "2024"
+
+[features]
+default = [ "uri-literals", "pipe-operators" ]
+pipe-operators = []
+uri-literals = []
+
+[dev-dependencies]
+criterion = "0.6.0"
+expect-test = "1.5.1"
+proptest = "1.6.0"
+
+[[bench]]
+name = "lexer_benchmark"
+harness = false
